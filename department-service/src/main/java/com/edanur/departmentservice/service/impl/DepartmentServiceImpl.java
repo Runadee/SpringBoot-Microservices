@@ -34,4 +34,20 @@ public class DepartmentServiceImpl implements DepartmentService {
         );
         return savedDepartmentDto;
     }
+
+    @Override
+    public DepartmentDto getDepartmentByCode(String departmentCode) {
+
+        Department department = departmentRepository.findByDepartmentCode(departmentCode);
+
+        DepartmentDto departmentDto = new DepartmentDto(
+                department.getId(),
+                department.getDepartmentName(),
+                department.getDepartmentDescription(),
+                department.getDepartmentCode()
+        );
+        return departmentDto;
+    }
+
+
 }
