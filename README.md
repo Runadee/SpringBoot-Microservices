@@ -1,6 +1,4 @@
-Sure! Here is a README for the [SpringBoot-Microservices](https://github.com/Runadee/SpringBoot-Microservices) project:
 
----
 
 # SpringBoot Microservices
 
